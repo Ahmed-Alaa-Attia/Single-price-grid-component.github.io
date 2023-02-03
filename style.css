@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+    font-family: "Karla";
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.2fr;
+    max-width: 66vh;
+    min-height: 49vh;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.join
+{
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.join h2
+{
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 2.5vh;
+}
+
+.join h3
+{
+    color: hsl(71, 73%, 54%);
+    font-size: 17.8px;
+    margin-bottom: 1.5vh;
+}
+
+.join p
+{
+    color: hsl(205, 5%, 56%);
+    max-width: 60vh;
+    font-weight: 300;
+    line-height: 2.5vh;
+}
+
+.sub
+{
+    background-color: hsl(179, 62%, 43%);
+    padding-top: 40px;
+    padding-left: 40px;
+    color: #fff;
+}
+
+.sub h3
+{
+    font-weight: 300;
+    margin-bottom: 1.9vh;
+}
+
+.center
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5vh;
+}
+.center h1
+{
+    padding-right: 1vh;
+}
+.center h4
+{
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.603);
+}
+.sub p
+{
+    font-weight: 100;
+    margin-bottom: 3vh;
+}
+.sub button
+{
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  min-width: 24vh;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.863);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.whyus
+{
+    background-color: hsl(179, 52%, 58%);
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.whyus h4
+{
+    color: #fff;
+    font-size: large;
+    margin-bottom: 2vh;
+}
+
+.whyus p{
+    color: rgba(255, 255, 255, 0.712);
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 2vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+     grid-template-columns: 1fr;
+    }
+  }
